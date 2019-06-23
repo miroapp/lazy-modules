@@ -2,7 +2,7 @@
 
 Lazy module is a logical block, that should be loaded separately on demand from the core app. Module includes all TS/JS/HTML/CSS files for that logical part (UI and code). 
 
-##Components import checking
+## Components import checking
 
 **Plugin:** 
 `CheckComponentImportPlugin.js`
@@ -22,7 +22,7 @@ var checkComponentImportPlugin = new CheckComponentImportPlugin({
 webpackConfig.plugins.push(lazyModulesImportsPlugin)
 ```
 
-##Module size checking
+## Module size checking
 
 **Plugin:** 
 `ChunkControlPlugin.js`
@@ -35,7 +35,7 @@ config.plugins.push(new ChunkControlPlugin({
    }))
 ```
 
-##Import between modules checking
+## Import between modules checking
 
 **Plugin:** 
 `LazyModulesImportsPlugin.js`
